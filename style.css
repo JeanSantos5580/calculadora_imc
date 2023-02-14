@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+:root {
+    --bg-blue: #023047;
+    --gray: #333;
+    --yellow: #ffb703;
+    --orange: #fb8500;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-blue);
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 35rem;
+    max-height: 55rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: var(--yellow);
+}
+
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gray);
+    padding-bottom: 1.6rem;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+th {
+    font-size: 1.4rem;
+    color: var(--gray);
+    padding: .2rem 4rem;
+}
+
+td {
+    font-size: 1.2rem;
+    color: var(--gray);
+    text-align: center;
+    padding: .3rem;
+}
+
+main {
+    padding-bottom: 1.6rem;
+}
+
+.titleForm {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--gray);
+    padding-bottom: 1.6rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.6rem;
+}
+
+.form input {
+    padding: .4rem .8rem;
+    background: none;
+    border: .1rem solid var(--bg-blue);
+    border-radius: 1rem;
+    outline: none;
+    font-weight: bold;
+    color: var(--bg-blue);
+}
+
+.form input:focus {
+    outline: .2rem solid var(--bg-blue);
+    border: none;
+}
+
+.form button {
+    background: var(--orange);
+    margin-top: 30px;
+    padding: 1rem;
+    border-radius: 3.6rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--bg-blue);
+    transition: 0.1s ease-in-out;
+}
+
+.form button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.diagnostico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+}
