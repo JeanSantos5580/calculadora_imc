@@ -129,6 +129,10 @@ main {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.diagnostico{
+    width: 100%;
+}
+
 .container-dados{
     width: 100%;
     display: flex;
