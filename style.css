@@ -28,15 +28,27 @@ body {
     color: #ffffff;
 }
 
+.back-container{
+    background: #eee;
+    border-radius: 1rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 35rem;
-    max-height: 55rem;
+    max-height: 70rem;
     padding: 3rem;
     border-radius: 1rem;
     background-color: var(--yellow);
+    transition: .2s ease-in-out;
+}
+
+.container:hover {
+    transform: translate(5px, 5px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 header {
@@ -92,7 +104,9 @@ main {
     color: var(--bg-blue);
 }
 
-.form input:focus {
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:focus {
+    transition: background 5000s ease-in-out 0s;
     outline: .2rem solid var(--bg-blue);
     border: none;
 }
@@ -116,9 +130,26 @@ main {
 }
 
 .diagnostico{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--yellow);
+    margin-top: 3rem;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    background: var(--orange);
+}
+
+.diagnostico:hover{
+    transform: scale(1.08);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.diagnostico div{
+    font-size: 1.4rem;
+    color: var(--bg-blue);
+    font-weight: 500;
 }
