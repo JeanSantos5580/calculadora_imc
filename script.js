@@ -3,7 +3,7 @@ function init() {
   const nomeInvalido = document.querySelector(".nome-invalido");
   const pesoInvalido = document.querySelector(".peso-invalido");
   const alturaInvalida = document.querySelector(".altura-invalida");
-  const diagnostico = document.querySelector(".diagnostico-before");
+  const diagnostico = document.querySelector(".diagnostico-before"); 
 
   const captaValores = () => {
     const inputNome = document.querySelector(".nome").value;
