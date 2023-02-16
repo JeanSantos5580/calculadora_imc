@@ -28,7 +28,7 @@ body {
     color: #ffffff;
 }
 
-.back-container{
+.back-container {
     background: #eee;
     border-radius: 1rem;
 }
@@ -94,6 +94,12 @@ main {
     gap: 1.6rem;
 }
 
+.container-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .form input {
     padding: .4rem .8rem;
     background: none;
@@ -109,6 +115,24 @@ main {
     transition: background 5000s ease-in-out 0s;
     outline: .2rem solid var(--bg-blue);
     border: none;
+}
+
+.nome-invalido {
+    color: #f00;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.peso-invalido {
+    color: #f00;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.altura-invalida {
+    color: #f00;
+    font-size: 1.1rem;
+    font-weight: 900;
 }
 
 .form button {
@@ -129,11 +153,11 @@ main {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.diagnostico{
+.diagnostico-before {
     width: 100%;
 }
 
-.container-dados{
+.diagnostico-after {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -147,12 +171,12 @@ main {
     background: var(--orange);
 }
 
-.container-dados:hover{
+.diagnostico-after:hover {
     transform: scale(1.08);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.container-dados div{
+.diagnostico-after div {
     font-size: 1.4rem;
     color: var(--bg-blue);
     font-weight: 500;

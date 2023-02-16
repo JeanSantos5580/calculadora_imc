@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
+    />
     <title>Calculadora de IMC</title>
   </head>
   <body>
@@ -47,27 +51,45 @@
         </main>
         <span class="titleForm">Preencha os campos abaixo</span>
         <form class="form">
-          <input
+          <div class="container-input">
+            <input
             class="nome"
             id="nome"
             type="text"
             placeholder="Nome completo"
-          />
-          <input
-            class="peso"
-            id="peso"
-            type="text"
-            placeholder="Forneça o valor de seu peso atual"
-          />
-          <input
-            class="altura"
-            id="altura"
-            type="text"
-            placeholder="Forneça o valor da sua altura atual"
-          />
+            />
+            <div class="nome-invalido" hidden>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Nome inválido!
+            </div>
+          </div>
+          <div class="container-input">
+            <input
+              class="peso"
+              id="peso"
+              type="text"
+              placeholder="Forneça o valor de seu peso atual"
+            />
+            <div class="peso-invalido" hidden>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Valor de peso fornecido é inválido!
+            </div>
+          </div>
+          <div class="container-input">
+            <input
+              class="altura"
+              id="altura"
+              type="text"
+              placeholder="Forneça o valor da sua altura atual"
+            />
+            <div class="altura-invalida" hidden>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Valor de altura fornecido é inválido!
+            </div>
+          </div>
           <button class="button">Calcular IMC</button>
         </form>
-        <div class="diagnostico" id="diagnostico"></div>
+        <span class="diagnostico-before"></span>
       </div>
     </div>
     <script src="./script.js"></script>
